@@ -20,9 +20,12 @@ This notebook implements and benchmarks diffusion-based anomaly detection models
 
 ## Dataset
 
-Same **TOW-IDS Automotive Ethernet** dataset as the companion `TOW-IDS ML.ipynb` notebook:
-- Training PCAP + Test PCAP with per-packet labels
+This project uses the **TOW-IDS Automotive Ethernet Intrusion Detection Dataset**, which contains:
+- Training PCAP (normal + attack traffic)
+- Test PCAP (normal + attack traffic)
+- Per-packet labels (`y_train.csv`, `y_test.csv`) with attack type annotations
 - Attack types: CAN DoS (C_D), CAN Replay (C_R), PTP sync (P_I), Injection (F_I), MAC Flooding (M_F)
+- **Dataset Download Link**: [TOW-IDS Automotive Ethernet Intrusion Dataset](https://ieee-dataport.org/documents/tow-ids-automotive-ethernet-intrusion-dataset)
 
 ## Configuration Defaults
 
